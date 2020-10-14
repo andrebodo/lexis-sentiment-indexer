@@ -1,6 +1,12 @@
 # Nexis Uni Scraper
 This repo contains several scripts to be executed in sequence to download, proceesss and build sentiment indicies based on search results obtained from Nexis Uni.
 
+## Order of Execution:
+1. scrape.py
+2. process.py
+3. index_a.py
+4. index_b.py
+
 ## Scraping
 Scraping Nexis Uni is unreliable due to the excessive usage of JavaScript. This creates issues with loading times and confirming events, which generally can be dealt with selenium waits. Despite this, there are a number of ways that the scraper can fail which cannot be avoided by waits alone. An attempt is made to improve reliability for scraping large datasets by making several attempts to scrape the data if there is a failure caught by the program.
 
