@@ -16,7 +16,7 @@ I have tested the scraper for my specific use case and it achieves my objective 
 ### Terms and Conditions
 Nexis Uni does not allow scraping of their data. This scraper is built for academic purposes. By using this codebase or a modified version of it, you are fully responsible for any and all consequences which may arise from scraping Nexis Uni.
 
-## Preprocssing
+## Preprocessing
 TODO
 
 ## File Processing
