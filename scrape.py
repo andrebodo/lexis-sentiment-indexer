@@ -1,16 +1,31 @@
+#!/usr/bin/env python
+"""Scraper for Nexis Uni
+
+This scraper is for downloading a large amount of search results from Nexis Uni. Search terms and sources can be
+specified in the search_configuration.yaml file. This has been tested for data spanning multiple years with a monthly
+download interval.
+"""
 import os
 import yaml
 import time
-import fnmatch
 import pandas as pd
-
 from pathlib import Path
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
+
+__author__ = 'Andre Bodo'
+__copyright__ = 'Copyright 2020, Andre Bodo'
+__credits__ = ['Andre Bodo']
+__license__ = 'MIT'
+__version__ = ''
+__maintainer__ = 'Andre Bodo'
+__email__ = 'bodo1184@mylaurier.ca'
+__status__ = 'Development'
 
 RESULT_LOAD_TIME_LIMIT_SECONDS = 60
 RESULT_SELECTION_TIMEOUT = 30
