@@ -25,26 +25,28 @@ Nexis Uni does not allow scraping of their data. This scraper is built for acade
 ### Configuring Search & User Settings
 Search settings are located in _search\_config.yaml_ and are divided into three sections: _general_, _sources_ and _terms_.
 
-1. General Data  
+1. General Data
   * _base_url_: The stem of the search url. To get this for a different university, perform a manual Nexis search and copy over the matching pattern.  
   * _start_date_: YYYY/MM/DD format, the first day searching will take place  
   * _end_date_:  YYYY/MM/DD format, the last day searching will take place  
-  * _scraper\_freq_: This corresponds to any frequency characters compatible with pandas. This feature is untested for anything but 'M'  
+  * _scraper\_freq_: This corresponds to any frequency characters compatible with pandas. This feature is untested for anything but 'M'
 2. Sources - a list of soruce ID's obtained from Nexi Uni's content listing csv available [for download here](https://p.widencdn.net/okffmp/Nexis_Uni_--_Content_Listing_--_July_2020)  
 3. Terms - a list of binary search terms (currently no compatibility with NLP search). Each line of terms are joined using the 'or' operator always. If you would like to use the 'and' operator, it needs to be specified as part of a search term. As per YAML formatting, in order to produce a search phrase it is required that double-quotations (to indicate search phrases) are encapuslated by single-quotations so the python yaml module can interpret them correctly.  
 
 Configuring the login information is straightforwards in _credentials.yaml_. The fields probably correspond to your institutions SSO login.  
-__TODO: include SSO url as an input
-
 
 ## Preprocessing
-TODO
 
 ## File Processing
-TODO
 
 ## Indexing
 
 TODO:
-* Method 1
-* Method 2 
+- [ ] include SSO url as an input
+- [ ] explain how to preprocess
+- [ ] upload processing.py
+- [ ] explain processing.py
+- [ ] upload index_a.py
+- [ ] explain index_a.py
+- [ ] upload index_b.py
+- [ ] explain index_b.py
