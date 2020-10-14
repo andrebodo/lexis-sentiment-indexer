@@ -13,7 +13,7 @@ Scraping Nexis Uni is unreliable due to the excessive usage of JavaScript. This 
 The following parameters help define the 'robustness' of scraping:  
 1. DRIVER_TIMEOUT: _how long selenium will wait before throwing a TimeoutException, I recommend this is minimum of 60 sec_  
 2. MAXIMUM_RETRIES: _how many times the code will re-attempt scraping a particular URL before specifying it as a failure_  
-3. DOWNLOAD_TIME: _this controls how long the program will wait for a downloaded file to be found in the download directory before considering the URL a failure__
+3. DOWNLOAD_TIME: _this controls how long the program will wait for a downloaded file to be found in the download directory before considering the URL a failure_
 
 One way you could estimate maximum retries is to consider the average number of results per URL and specify some additional saftey threshold. I found that when more results are returned from a search, the failure rate is much higher (don't ask me why, Nexis Uni sometimes just fails to load parts of the page). For 2000 results I found 20 was a better number of retries since on several URL's there were 7-8 attempts before all the rows could be scraped.
 
