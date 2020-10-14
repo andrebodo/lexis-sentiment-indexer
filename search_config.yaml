@@ -1,0 +1,45 @@
+base_url: "http://advance.lexis.com.libproxy.wlu.ca/api/search"
+start_date: 2005/01/01
+end_date: 2015/12/31
+scraper_freq: M
+sources:
+  - MTA2OTUwNQ
+  - MTA2NDQwMg
+  - MTA2NzM3MA
+  - MTA2OTIwMQ
+  - MTA2NzY1Mg
+terms:
+  - '"crude oil"'
+  - opec*
+  - '"interstate oil compact commission"'
+  - '"iogcc"'
+  - '"interstate oil and gas compact comission"'
+  - '"hydraulic fracturing"'
+  - hydrofracking
+  - fracking
+  - fracing
+  - hydrofracturing
+  - '"oil sands"'
+  - bitumen
+  - '"crude bitumen"'
+  - '"tar sands"'
+  - '"oil futures"'
+  - '"wti futures"'
+  - '"wti crude"'
+  - '"wti oil"'
+  - '"wti crude futures"'
+  - '"wti crude oil futures"'
+  - '"brent futures"'
+  - '"brent oil"'
+  - '"brent crude"'
+  - '"brent crude futures"'
+  - '"brent crude oil futures"'
+  - non-opec*
+  - '"strategic petroleum reserve"'
+  - '"sweet crude"'
+  - '"sour crude"'
+  - '"light crude"'
+  - '"petroleum supply monthly"'
+  - '"petroleum monthly supply"'
+  - '"short-term energy outlook"'
+  - petroleum
