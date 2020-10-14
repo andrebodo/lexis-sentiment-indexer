@@ -89,9 +89,9 @@ def download_url(url, uidx):
     e = driver.find_element_by_id('password')
     e.send_keys(credentials['password'])
     e.send_keys(Keys.ENTER)
-    time.sleep(5)  # wait for login
+    time.sleep(5)  # waits for login
 
-    driver.get(url)  # load page
+    driver.get(url)
 
     for attempt in range(MAXIMUM_RETRIES):
         try:
@@ -172,7 +172,10 @@ def download_url(url, uidx):
                                               driver.find_element_by_xpath("//button[@data-action='download']"))
 
                         start_time = time.time()
-                        while not os.path.exists(str(download_path) + filename + '.ZIP'):
+                        while True:
+                            if os.path.exists(str(download_path) + filename + '.ZIP'):
+                                if not os.path.exists(str(download_path) + filename + '.ZIP.part'):
+                                    break
                             time.sleep(2)
                             if time.time() - start_time > DOWNLOAD_TIMEOUT:
                                 raise WebDriverException('download timeout')
