@@ -3,6 +3,7 @@
 *.part
 credentials_working.yaml
 *.exe
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
