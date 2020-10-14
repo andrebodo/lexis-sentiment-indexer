@@ -27,8 +27,7 @@ __maintainer__ = 'Andre Bodo'
 __email__ = 'bodo1184@mylaurier.ca'
 __status__ = 'Development'
 
-RESULT_LOAD_TIME_LIMIT_SECONDS = 60
-RESULT_SELECTION_TIMEOUT = 30
+# Control variables
 DOWNLOAD_TIMEOUT = 300
 DRIVER_TIMEOUT = 60
 MAXIMUM_RETRIES = 20
