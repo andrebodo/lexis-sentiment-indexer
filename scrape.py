@@ -25,7 +25,7 @@ download_path = str(base_path) + '\\data\\raw\\'
 Path(download_path).mkdir(parents=True, exist_ok=True)
 
 # Load login credentials from file
-with open('credentials.yaml') as file:
+with open('credentials_working.yaml') as file:
     credentials = yaml.load(file, Loader=yaml.FullLoader)
 
 # Build scraping urls
@@ -155,14 +155,15 @@ def download_url(url, uidx):
                         # download
                         driver.execute_script('arguments[0].click();',
                                               driver.find_element_by_xpath("//button[@data-action='download']"))
+
                         start_time = time.time()
-                        while True:
+                        while not os.path.exists(str(download_path) + filename + '.ZIP'):
+                            time.sleep(2)
                             if time.time() - start_time > DOWNLOAD_TIMEOUT:
                                 raise WebDriverException('download timeout')
-                            if Path(str(download_path) + filename + '.ZIP').is_file():
-                                batch += 1
-                                n_selected = 0
-                                break
+                        n_selected = 0
+                        batch += 1
+
                     else:  # File exists, so deselect all and reset selection count
                         wait.until(EC.invisibility_of_element_located((By.XPATH, "//div[@class='box']")))
                         wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@data-action='viewtray']"))).click()
@@ -217,8 +218,8 @@ def download_url(url, uidx):
 
 failed_urls = []
 failed_url_idx = []
-uidx = 117
-while uidx == 117: #< len(url_list):
+uidx = 0
+while uidx < len(url_list):
     url = url_list[uidx]
     print(f'processing: [{uidx + 1}] of [{len(url_list)}]: ')
     res = download_url(url, uidx)
