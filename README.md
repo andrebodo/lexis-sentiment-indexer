@@ -1,7 +1,7 @@
 # Nexis Uni Scraper
 This repo contains several scripts to be executed in sequence to download, proceesss and build sentiment indicies based on search results obtained from Nexis Uni.
 
-## Order of Execution:
+### Order of Execution:
 1. scrape.py
 2. process.py
 3. index_a.py
