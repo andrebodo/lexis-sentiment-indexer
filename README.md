@@ -35,6 +35,9 @@ Search settings are located in _search\_config.yaml_ and are divided into three 
 
 Configuring the login information is straightforwards in _credentials.yaml_. The fields probably correspond to your institutions SSO login.  
 
+### Configuring Your Browser:
+This script only supports geckodriver.exe, you can download it [here](https://github.com/mozilla/geckodriver) and place the .exe in the same directory as scrape.py
+
 ## Preprocessing
 
 ## File Processing
