@@ -22,6 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Documents and Settings" />
   </component>
   <component name="RunManager" selected="Python.scrape">
     <configuration name="andre_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -107,22 +108,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="232" key="GridCell.Tab.0.bottom" timestamp="1602673194652">
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1602704574641">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.bottom/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602673194652" />
-    <state width="2539" height="232" key="GridCell.Tab.0.center" timestamp="1602673194652">
+    <state x="1060" y="454" key="FileChooserDialogImpl/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602704574641" />
+    <state width="2539" height="232" key="GridCell.Tab.0.bottom" timestamp="1602749306051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.center/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602673194652" />
-    <state width="2539" height="232" key="GridCell.Tab.0.left" timestamp="1602673194652">
+    <state width="2539" height="232" key="GridCell.Tab.0.bottom/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
+    <state width="2539" height="232" key="GridCell.Tab.0.center" timestamp="1602749306051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.left/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602673194652" />
-    <state width="2539" height="232" key="GridCell.Tab.0.right" timestamp="1602673194652">
+    <state width="2539" height="232" key="GridCell.Tab.0.center/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
+    <state width="2539" height="232" key="GridCell.Tab.0.left" timestamp="1602749306051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.right/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602673194652" />
+    <state width="2539" height="232" key="GridCell.Tab.0.left/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
+    <state width="2539" height="232" key="GridCell.Tab.0.right" timestamp="1602749306051">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="232" key="GridCell.Tab.0.right/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602542702729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

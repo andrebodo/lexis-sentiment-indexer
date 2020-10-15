@@ -238,7 +238,7 @@ failed_url_idx = []
 uidx = 0
 while uidx < len(url_list):
     url = url_list[uidx]
-    print(f'processing: [{uidx + 1}] of [{len(url_list)}]: ')
+    print(f'processing: [{uidx}] of [{len(url_list) - 1}]: ')
     res = download_url(url, uidx)
     if not res:
         failed_urls = failed_urls.append(url)
