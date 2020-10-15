@@ -39,14 +39,16 @@ Configuring the login information is straightforwards in _credentials.yaml_. The
 This script only supports geckodriver.exe, you can download it [here](https://github.com/mozilla/geckodriver) and place the .exe in the same directory as scrape.py
 
 ## Preprocessing
+Given that the scraper downloads files in .rtf format, some pre-processing is required to get the raw text and journal meta-data of the article without all the additional formatting and .rtf metadata. This step is simply accomplished by using a nice piece of software called [DocFrac](http://docfrac.net/wordpress/). After extracting all the .zip files, run DocFrac and patiently wait for things to load up. After reading a bunch of posts on SO, I think the ease of using DocFrac far outweights any sort of attempt that could be made to programmatically convert .rtf to raw .txt  
 
 ## File Processing
+If you haven't noticed yet Nexi Uni is a far-from-perfect result indexer. A clear example of this can be seen throughout the scraping processing where the 'group duplicates' feature is used. This groups _**some**_ of the results, but a keen eye can notice that this feature is unreliable. In addition to this, the scraper also introduces a source of duplication from overlapping date ranges. It's important to de-duplicate the results properly, which is the first step in the _processing.py_. There are peer-reviewed papers in respected finance journals which ignore this crucial step when trying to formulate count-based indicies. This boggles my mind as to why they are getting past the peer review process in the first place. If you think that is absurd, there are further mis-applications of statistical methods and data handling which make some of these papers totally un-reproduceable. A lot of problems are caused by a reliance on the current backend state of Nexis Uni indexing and NLP software. Its bad enough that Nexis Uni is constantly evolving its indexing process, which makes basic searching a non-trivial aspect of the methodology used to arrive at a final index, so there is a great need to reduce and further sources of error and do our best to make the methodology reproducible as time moves on after publication. To help accomplish this, the scraper only performs boolean search and does not consider the 'relevance' of results, an algorithm that Nexis Uni doesn't explain at all and keeps changing - there are papers that use this relevance feature to prepare input data, and publishes subsequeny indicies online!.
 
 ## Indexing
 
 TODO:
 - [ ] include SSO url as an input
-- [ ] explain how to preprocess
+- [x] explain how to preprocess
 - [ ] upload processing.py
 - [ ] explain processing.py
 - [ ] upload index_a.py
