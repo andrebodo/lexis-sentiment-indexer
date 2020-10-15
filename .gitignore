@@ -4,6 +4,8 @@
 credentials_working.yaml
 *.exe
 *.csv
+*.rtf
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
