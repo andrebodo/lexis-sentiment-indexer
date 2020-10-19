@@ -64,7 +64,7 @@ TODO:
 - [x] explain how to preprocess
 - [x] upload processing.py
 - [x] explain processing.py
-- [ ] upload article_count_index.py
+- [x] upload article_count_index.py
 - [x] explain article_count_index.py
 - [ ] upload index_b.py
 - [ ] explain index_b.py
