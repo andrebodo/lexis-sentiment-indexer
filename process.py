@@ -7,7 +7,6 @@ import os
 import re
 import sys
 import contextlib
-import pandas as pd
 
 import sqlite3
 from pathlib import Path
