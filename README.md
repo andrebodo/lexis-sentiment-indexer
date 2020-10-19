@@ -4,7 +4,7 @@ This repo contains several scripts to be executed in sequence to download, proce
 #### Order of Execution:
 1. scrape.py
 2. process.py
-3. index_a.py
+3. article_count_index.py
 4. index_b.py
 
 ## Scraping
@@ -35,7 +35,7 @@ Search settings are located in _search\_config.yaml_ and are divided into three 
 
 Configuring the login information is straightforwards in _credentials.yaml_. The fields probably correspond to your institutions SSO login.  
 
-#### Configuring Your Browser:
+#### Configuring Your Browser
 This script only supports geckodriver.exe, you can download it [here](https://github.com/mozilla/geckodriver) and place the .exe in the same directory as scrape.py
 
 #### More Robust, But Not Perfect...
