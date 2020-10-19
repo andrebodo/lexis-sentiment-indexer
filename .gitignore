@@ -4,6 +4,8 @@
 credentials_working.yaml
 *.exe
 *.csv
+*.xlsx
+*.xls
 *.rtf
 *.txt
 *.db
