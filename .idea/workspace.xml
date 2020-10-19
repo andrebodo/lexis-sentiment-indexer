@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2041f3df-4e10-4bde-9c6c-cd433611b8df" name="Default Changelist" comment="" />
+    <list default="true" id="2041f3df-4e10-4bde-9c6c-cd433611b8df" name="Default Changelist" comment="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology&#10;minor update to order of execution list in readme.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,17 +39,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iTUdpOzjeplxguTccq9vZv1SHD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Documents and Settings" />
   </component>
-  <component name="RunManager" selected="Python.scrape">
+  <component name="RunManager" selected="Python.process">
     <configuration name="andre_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lexis-sentiment-indexer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,39 +76,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reconcile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lexis-sentiment-indexer" />
+    <configuration name="process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../questrade-reconcile" />
+      <option name="SDK_HOME" value="C:\Users\Andre\miniconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../questrade-reconcile/reconcile.py" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="scrape" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lexis-sentiment-indexer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Andre\miniconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrape.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -88,11 +118,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="silvana_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lexis-sentiment-indexer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Personal Portfolio" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Personal Portfolio/silvana_strategy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trading_utilities" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lexis-sentiment-indexer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Personal Portfolio" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Personal Portfolio/trading_utilities.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.andre_strategy" />
+      <item itemvalue="Python.process" />
+      <item itemvalue="Python.scrape" />
+      <item itemvalue="Python.silvana_strategy" />
+      <item itemvalue="Python.trading_utilities" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.process" />
         <item itemvalue="Python.scrape" />
+        <item itemvalue="Python.trading_utilities" />
+        <item itemvalue="Python.silvana_strategy" />
         <item itemvalue="Python.andre_strategy" />
-        <item itemvalue="Python.reconcile" />
       </list>
     </recent_temporary>
   </component>
@@ -105,32 +186,107 @@
       <option name="presentableId" value="Default" />
       <updated>1601931166583</updated>
     </task>
+    <task id="LOCAL-00001" summary="added sql db to list of ignore files">
+      <created>1603082477510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603082477510</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added sql db to list of ignore files&#10;added log file to list of ignore files">
+      <created>1603092293864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603092293864</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology">
+      <created>1603095006569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603095006569</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology&#10;minor update to order of execution list in readme.md">
+      <created>1603095095589</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603095095589</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added sql db to list of ignore files" />
+    <MESSAGE value="added sql db to list of ignore files&#10;added log file to list of ignore files" />
+    <MESSAGE value="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology" />
+    <MESSAGE value="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology&#10;minor update to order of execution list in readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sql db to list of ignore files&#10;added log file to list of ignore files&#10;updated readme to address incomplete download issue with Nexis and added description of fist index methodology&#10;minor update to order of execution list in readme.md" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1020" y="519" key="#Notifications" timestamp="1603077563652">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1020" y="519" key="#Notifications/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603077563652" />
+    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603091859786">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603091859786" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1602704574641">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602704574641" />
-    <state width="2539" height="232" key="GridCell.Tab.0.bottom" timestamp="1602749306051">
+    <state width="1269" height="232" key="GridCell.Tab.0.bottom" timestamp="1603092562703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.bottom/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
-    <state width="2539" height="232" key="GridCell.Tab.0.center" timestamp="1602749306051">
+    <state width="1269" height="232" key="GridCell.Tab.0.bottom/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603092562703" />
+    <state width="1269" height="232" key="GridCell.Tab.0.center" timestamp="1603092562703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.center/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
-    <state width="2539" height="232" key="GridCell.Tab.0.left" timestamp="1602749306051">
+    <state width="1269" height="232" key="GridCell.Tab.0.center/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603092562703" />
+    <state width="1269" height="232" key="GridCell.Tab.0.left" timestamp="1603092562703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.left/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
-    <state width="2539" height="232" key="GridCell.Tab.0.right" timestamp="1602749306051">
+    <state width="1269" height="232" key="GridCell.Tab.0.left/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603092562703" />
+    <state width="1269" height="232" key="GridCell.Tab.0.right" timestamp="1603092562703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="232" key="GridCell.Tab.0.right/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602749306051" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602542702729">
+    <state width="1269" height="232" key="GridCell.Tab.0.right/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603092562703" />
+    <state width="2539" height="473" key="GridCell.Tab.1.bottom" timestamp="1602756240141">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602542702729" />
+    <state width="2539" height="473" key="GridCell.Tab.1.bottom/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602756240141" />
+    <state width="2539" height="473" key="GridCell.Tab.1.center" timestamp="1602756240141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="473" key="GridCell.Tab.1.center/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602756240141" />
+    <state width="2539" height="473" key="GridCell.Tab.1.left" timestamp="1602756240141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="473" key="GridCell.Tab.1.left/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602756240141" />
+    <state width="2539" height="473" key="GridCell.Tab.1.right" timestamp="1602756240141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="473" key="GridCell.Tab.1.right/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1602756240141" />
+    <state x="872" y="428" key="Vcs.Push.Dialog.v2" timestamp="1603077629796">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="428" key="Vcs.Push.Dialog.v2/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603077629796" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1603090434820">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.0.1280.984/0.0.2560.1400@0.0.2560.1400" timestamp="1603090434820" />
   </component>
 </project>
