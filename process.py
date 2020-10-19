@@ -34,7 +34,7 @@ def extract_header(s):
     return None
 
 
-# This function is to handle the various inconsistencies with Nexi Uni data formatting.
+# This function is to handle the various inconsistencies with Nexis Uni data formatting.
 def extract_primary_metadata(s):
     match = re.search(r'\n\scorrection\sappended', s, re.IGNORECASE)
     if match:
