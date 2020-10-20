@@ -139,7 +139,6 @@ with contextlib.closing(sqlite3.connect(dbase_loc)) as conn:
             for row in cursor.fetchall():
                 clean_text = prepare_for_sentiment(row[1])
                 score_data.append([datetime.strptime(row[0], '%Y-%m-%d'), compute_sentiment(clean_text)])
-                break
 
 df = pd.DataFrame(data=score_data, columns=['date', 'score'])
 df = df.groupby(by=['date'], as_index=False).sum()
