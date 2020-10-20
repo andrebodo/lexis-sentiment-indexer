@@ -159,7 +159,7 @@ with contextlib.closing(sqlite3.connect(dbase_loc)) as conn:
                 clean_text = prepare_for_sentiment(row[1])
                 score_data.append([datetime.strptime(row[0], '%Y-%m-%d'), compute_sentiment(clean_text)])
                 row_count += 1
-            progress(row_count, total_rows, prefix='Processing files: ')
+                progress(row_count, total_rows, prefix='Processing files: ')
 
 df = pd.DataFrame(data=score_data, columns=['date', 'score'])
 df = df.groupby(by=['date'], as_index=False).sum()
