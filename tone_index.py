@@ -145,4 +145,19 @@ df = df.groupby(by=['date'], as_index=False).sum()
 df.set_index('date', inplace=True, drop=True)
 df = df.resample('M').sum()
 
+# download OVX data from yahoo finance
+period1 = int(datetime.timestamp(pd.Timestamp(df.index.values[0]) - relativedelta(months=1)))
+period2 = '9999999999'
+base_url = 'https://query1.finance.yahoo.com/v7/finance/download'
+url = f'{base_url}/^OVX?period1={period1}&period2=9999999999&interval=1d&events=history'
+ovx_data = pd.read_csv(url, parse_dates=['Date'], index_col=['Date'], usecols=['Date', 'Adj Close'])
+ovx_data.index.names = ['date']
+ovx_data.columns = ['OVX']
+ovx_data.sort_index(inplace=True)
+ovx_data = ovx_data.reindex(df.index, method='ffill')
+
+df = df.merge(ovx_data, how='inner', left_index=True, right_index=True).dropna()
+
+df.to_excel('count_based_index.xlsx')
+
 df.to_excel('harvard_dict_based_index.xlsx')
