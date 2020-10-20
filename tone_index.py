@@ -157,7 +157,4 @@ ovx_data.sort_index(inplace=True)
 ovx_data = ovx_data.reindex(df.index, method='ffill')
 
 df = df.merge(ovx_data, how='inner', left_index=True, right_index=True).dropna()
-
-df.to_excel('count_based_index.xlsx')
-
 df.to_excel('harvard_dict_based_index.xlsx')
