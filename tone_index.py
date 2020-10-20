@@ -35,6 +35,20 @@ scowl_2of12dict = str(base_path) + '\\2of12inf.txt'
 hiv_loc = str(base_path) + '\\HIV-4.csv'
 
 
+# Text based progress bar from StackOverflow user Vladimir Ignatyev: https://stackoverflow.com/a/27871113 If you are
+# using pycharm this function may not work as expected. To ensure it prints correctly, go to Run and make sure the
+# Emulate terminal in output console is selected
+def progress(count, total, prefix=''):
+    bar_len = 60
+    filled_len = int(round(bar_len * count / float(total)))
+
+    percents = round(100.0 * count / float(total), 1)
+    bar = '=' * filled_len + '-' * (bar_len - filled_len)
+
+    sys.stdout.write(f'{prefix}[{bar}] {percents}%\r')
+    sys.stdout.flush()  # As suggested by Rom Ruben
+
+
 # Load up the american word dictionary
 with open(scowl_2of12dict, "r") as f:
     usa_dict = f.readlines()
@@ -135,10 +149,17 @@ score_data = []
 with contextlib.closing(sqlite3.connect(dbase_loc)) as conn:
     with conn:  # auto-commit
         with contextlib.closing(conn.cursor()) as cursor:
+            # Count number of rows
+            cursor.execute("SELECT COUNT(*) FROM ARTICLES")
+            total_rows = int(cursor.fetchall()[0][0])
+            # Get data and process it
             cursor.execute("SELECT DATE, BODY FROM ARTICLES")
+            row_count = 0
             for row in cursor.fetchall():
                 clean_text = prepare_for_sentiment(row[1])
                 score_data.append([datetime.strptime(row[0], '%Y-%m-%d'), compute_sentiment(clean_text)])
+                row_count += 1
+            progress(row_count, total_rows, prefix='Processing files: ')
 
 df = pd.DataFrame(data=score_data, columns=['date', 'score'])
 df = df.groupby(by=['date'], as_index=False).sum()
