@@ -27,8 +27,6 @@ __status__ = 'Prototype'
 # Directories and file paths needed
 base_path = Path(__file__).parent
 dbase_loc = str(base_path) + '\\articles.db'
-output_path = str(base_path) + '\\indices\\'
-Path(output_path).mkdir(parents=True, exist_ok=True)
 
 with contextlib.closing(sqlite3.connect(dbase_loc)) as conn:
     df = pd.read_sql('SELECT DATE FROM ARTICLES', conn, parse_dates={'DATE': '%Y-%m-%d'})
